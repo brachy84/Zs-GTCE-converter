@@ -36,8 +36,8 @@ public class JsonConverter {
         GTCEuMappings.init();
 
         Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter path of bq json file: ");
-        String scriptPath = "C:\\Users\\Joel\\Desktop\\bq\\DefaultQuests.json";//sc.nextLine();
+        System.out.print("Enter path of bq json file: ");
+        String scriptPath = sc.nextLine();
 
         Path path = Paths.get(scriptPath);
         JsonConverter converter = new JsonConverter();

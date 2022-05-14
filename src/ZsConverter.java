@@ -27,7 +27,7 @@ public class ZsConverter {
         output.add(msg);
     }
 
-    public static void run(boolean forceReRun) {
+    public static void run() {
         GTCEMappings.init();
 
         Scanner sc = new Scanner(System.in);
@@ -49,7 +49,6 @@ public class ZsConverter {
                 if (path1.toString().endsWith(".zs")) {
                     log("Reading file " + path1);
                     ZsConverter converter = new ZsConverter();
-                    converter.forceReRun = forceReRun;
                     converter.readFile(path1.toFile());
 
                     bracketsConverted.addAndGet(converter.bracketsConverted);
@@ -86,7 +85,6 @@ public class ZsConverter {
         return val.equals("y") || val.equals("Y");
     }
 
-    private boolean forceReRun;
     private int currentLine = 0;
     private int bracketsConverted;
     private int machineBracketsConverted;
