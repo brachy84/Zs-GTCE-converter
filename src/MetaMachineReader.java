@@ -250,8 +250,8 @@ public class MetaMachineReader {
 
     public static void run() {
         Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter path of script folder: ");
-        String scriptPath = "C:\\Users\\Joel\\Desktop\\bq\\data.txt";//sc.nextLine();
+        System.out.print("Enter path of script folder: ");
+        String scriptPath = sc.nextLine();
 
         String functionName = "putMachine";
 

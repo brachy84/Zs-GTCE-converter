@@ -30,8 +30,8 @@ public class MetaItemReader {
 
     public static void run() {
         Scanner sc = new Scanner(System.in); //System.in is a standard input stream
-        //System.out.print("Enter path of script folder: ");
-        String scriptPath = "C:\\Users\\Joel\\Desktop\\bq\\data.txt";//sc.nextLine();
+        System.out.print("Enter path of script folder: ");
+        String scriptPath = sc.nextLine();
         System.out.print("Function Name: ");
         String functionName = sc.nextLine();
 
